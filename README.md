@@ -1,13 +1,16 @@
-== INFORMATION ==
-Emberfire was made by the following Lua developers:
+**Information**
+This text based MMORPG was developped by the following Lua developers: 
 Daark#7373
 Viken#0243
 
-== HOW TO USE ==
-api file has all the functions you need to run your text based MMORPG. Start your code in main.lua such indicated under the documentation.
+This project is open sourced and can be used in any way. This project is no longer being worked on as there isn't much to add into updates. Note that **there are multiple bugs**, but I don't have the motivation to fix them.
 
 
-Documentation
+**Usage**
+api file has all the functions you need to run your text based MMORPG. Start your code in main.lua such indicated under the documentation in this file.
+
+
+**Documentation**
 
 api.asSpawnHostileUpdate() -- Optional, must be defined if wanted.
 api.postSpawnHostileUpdate() -- Also optional.
@@ -18,7 +21,7 @@ api.changeStat(stat, number) -- Sets the chosen stat to the number.
 api.getStat(stat) -- Returns the given stats value.
 api.wait(number) -- Waits for the given number in seconds before continuing the code.
 api.createHostile({name="name",health=1,reward=100,attack=4,xp=1,{"drop 1"}}) -- The hostiles drops are optional.
-api.addCommand({name="name",usage="test",aliases={"t"}, function() -- Aliases table are optional.
+api.addCommand({name="name",usage="test",aliases={"t"}}, function() -- Aliases table are optional.
   print("you ran the command")
 end)
 api.checkForCommandInput() -- Allows the user to run a command.
@@ -33,7 +36,8 @@ api.createShop({name = "mainshop1", items = {["yeet"] = 5, ["lol"] = 2}}) -- Not
 api.openShop("mainshop1")
 
 
-How to start your game's code
+
+**How to start your game's code**
 
 require "api"
 api.register()
