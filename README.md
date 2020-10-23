@@ -8,6 +8,8 @@ This project is open sourced and can be used in any way. This project is no long
 
 **Usage**
 api file has all the functions you need to run your text based MMORPG. Start your code in main.lua such indicated under the documentation in this file.
+Ensure you have lua installed on your desktop in order to run the play.bat
+An alternative would be using luvit
 
 
 **Documentation**
