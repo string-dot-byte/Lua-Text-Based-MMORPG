@@ -371,13 +371,6 @@ api = {
     		end
     	end
     end,
-    userPower = function()
-      if api.getStat("level") <= 15 then
-        return 1
-      elseif api.getStat("level") >= 16 and api.getStat("level") <= 29 then
-        return 2
-      end
-    end,
     register = function()
         local file = io.open("data.txt", "r")
         if file then
