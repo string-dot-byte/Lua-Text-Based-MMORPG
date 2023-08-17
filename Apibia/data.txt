@@ -1,0 +1,3 @@
+EquippedWeapon:banana
+Weapons:{banana,orange,e}
+Health:90
